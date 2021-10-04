@@ -1,0 +1,42 @@
+1. /*
+   * Object Literal
+   */
+      var Car = {};
+          Car['modal'] = ' Safari  XZ+'; or car.modal = 'Safari XZ+';
+          Car['color'] = 'Black' or car.color = 'Black';
+          Car['airBag'] = '4' or car.airBag = '4';
+          
+    // object Literal Declare And Initial
+          Car = { modal : 'Safari XZ+' , color : 'Black' , airBag : '4' };
+          
+2. /*
+   * Object Constructor
+   */
+      var Car = new Object();
+          Car.modal = 'Safari xz+';
+          Car.color = 'Black';
+          Car.airBag = '4';
+ 3. /*
+    *  Factory Function
+    */
+      function Car(){
+          return {
+             modal : modal,
+             color : color,
+             airBag : airBag
+          }
+      }
+      var tata = Car('Safari XZ+','Black','4');
+      var hundai = Car('Safari XZ+','Red','4');
+
+4. /*
+   *  Construction Function
+   */
+     function Car(modal,color,airBag){
+        this.modal = modal;
+        this.color = color;
+        this.airBag = airBag;
+     }
+     var tata   = new Car('Safari XZ+','Black','4');
+     var hundai = new Car('Safari XZ+','Black','4');
+   
